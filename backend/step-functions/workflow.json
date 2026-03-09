@@ -1,0 +1,11 @@
+{ 
+  "Comment": "Codebase TL;DR Workflow", 
+  "StartAt": "AnalyzeRepo", 
+  "States": { 
+    "AnalyzeRepo": { 
+      "Type": "Task", 
+      "Resource": "${AnalyzeRepoArn}", 
+      "Next": "GenerateScript" 
+    } 
+  } 
+} 
